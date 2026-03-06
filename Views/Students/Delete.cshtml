@@ -1,0 +1,32 @@
+﻿@model StudentManager.Models.Student
+
+<h2>Delete Student</h2>
+
+<div>
+    <label>Name</label>
+    <input value="@Model.Name" readonly />
+</div>
+
+<div>
+    <label>Age</label>
+    <input value="@Model.Age" readonly />
+</div>
+
+<div>
+    <label>Email</label>
+    <input value="@Model.Email" readonly />
+</div>
+
+<form method="post" action="/Students/DeleteConfirmed">
+
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <div>
+        <input type="submit" value="Delete" />
+    </div>
+
+</form>
+
+<div>
+    <a href="/Students/Index">Cancel</a>
+</div>

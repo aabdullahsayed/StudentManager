@@ -1,0 +1,31 @@
+﻿@model StudentManager.Models.Student
+
+<h2>Edit Student</h2>
+
+<form method="post" action="/Students/Edit">
+
+    <div>
+        <label>Id</label>
+        <input name="Id" value="@Model.Id" readonly />
+    </div>
+
+    <div>
+        <label>Name</label>
+        <input name="Name" value="@Model.Name" />
+    </div>
+
+    <div>
+        <label>Age</label>
+        <input name="Age" value="@Model.Age" />
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input name="Email" value="@Model.Email" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update" />
+    </div>
+
+</form>
