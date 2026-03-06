@@ -23,6 +23,8 @@ The purpose of this project is to understand the **MVC architecture**, model bin
 ## Running Entity Framework Migrations with 
 `dotnet ef`
 
+### ! Delete the `Overview.cs` file first
+
 ### 1. Install EF Core CLI Tool
 
 Install the Entity Framework CLI globally:
