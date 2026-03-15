@@ -45,6 +45,9 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 ```bash
 dotnet tool install --global dotnet-ef
 ```
+```bash
+dotnet ef migrations add Initial
+```
 ### 4. Apply Migration to the Database
 
 ```bash
